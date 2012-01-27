@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>JSONP</title>
+<!-- add your meta tags here -->
+<link href="/css/my_layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<script>
+
+$.getJSON("latestpackage.html?callback=dood&foo=crap", function(dood) {
+    console.log('output?');
+    console.log(dood.build_id);
+});
+console.log('etst')
+</script>
+<h1>jsonp test</h1>
+</body>
+</html>
